@@ -1,0 +1,119 @@
+%news-block{
+    padding: 0px 15px;
+    height: 330px;
+    
+}
+%event-date{
+    background-color: $green;
+    text-align: center;
+    line-height: 25px;
+    padding-top: 50px;
+    .day-block{
+        border-top:1px solid #DCDCDC;
+        padding-top: 3px;
+    }
+    .date-block{
+        display:flex;
+        flex-flow: column;
+    }
+    .month{
+        margin-bottom: 0px;
+        font-size: 18px;
+        font-weight: $medium;
+        color: #fff;
+        display: block;
+    }
+    .date{
+        font-size: 32px;
+        font-weight: $bold;
+        color: #fff;
+        font-family: "Arial";
+        display: block;
+    }
+    .day{
+        font-size: 13px;
+        font-weight: $regular;
+        color: #fff;
+        
+    }
+}
+
+.news{
+    @extend %news-block;
+    
+    .inner-content{
+        border: 1px solid #DCDCDC;
+        padding: 25px 30px;
+        height: 100%;
+    }
+    .title{
+        min-height: 50px;
+    }
+    .details{
+        font-size: 0.8em;
+    }
+    .date{
+
+        &:after{
+            color: $green;
+            content: '\00a0 \2022 \00a0';
+        }
+    }
+    .short-text{
+        color: $body-font-color;
+        font-size: $body-text-size;
+    }
+}
+
+.event{
+    @extend %news-block;
+    
+    .row{
+        height: 100%;
+    }
+    .event-info{
+        padding: 45px 40px 30px;
+        border-top: 1px solid #DCDCDC;
+        border-right: 1px solid #DCDCDC;
+        border-bottom: 3px solid #8bb036;
+        
+        .date, .time, .location{
+            margin-bottom: 5px;
+            color: $body-font-color;
+            font-size: 0.9em;
+            font-weight: $bold;
+            i{
+                margin-right: 10px;
+                width: 15px;
+                text-align: center;
+            }
+            .regular{
+                font-weight: $regular;
+            }
+        }
+    }
+    .event-date{
+        @extend %event-date;
+    }
+    .button{
+        @extend %button;
+        
+        color: $green !important;
+        position: absolute;
+        bottom: 30px;
+        right: 25px;
+    }
+}
+
+.event:nth-child(1), .news:nth-child(1){
+    padding-left: 0px; 
+}
+.event:last-child, .news:last-child{
+    padding-right: 0px;
+}
+
+@media (max-width: 1200px){
+    %news-block{
+        padding: 7px 0px;
+    }
+}

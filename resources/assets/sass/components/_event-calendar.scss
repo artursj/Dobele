@@ -1,0 +1,101 @@
+.event-calendar{
+    .calendar-menu{
+            margin-bottom: 40px;
+        .menu-item{
+            display: inline-block;
+            padding: 0px 15px;
+            font-size: 1em;
+            color: #D9D9D9;
+            font-weight: $medium;
+            cursor: pointer;
+            &:hover{
+                color: $green;
+                border-bottom: 2px solid $green;
+            }
+        }
+        .active{
+            color: $green;
+            border-bottom: 2px solid $green;
+        }
+    }
+    .event-list{
+        ul{
+            padding: 0px;
+        }
+        padding-left: 30px;
+        .event-count{
+            font-size: $heading-small-font-size;
+            color: $blue-color;
+            font-weight: $medium;
+        }
+        .event-item{
+            list-style: none;
+            .event-type{
+                margin: 0;
+                font-size: 0.8em;
+                font-weight: $bold;
+                color: $body-font-color;
+            }
+            .event-title{
+                font-weight: $bold;
+                font-size: 1em;
+                .time{
+                    color: $body-font-color;
+                    padding: 0px 15px;
+                }
+            }
+        }
+    }
+    #datetimepicker{
+        table{
+            border-spacing: 10px;
+            border-collapse: separate;
+        }
+        th{
+            text-align: center;
+        }
+        
+        td{
+            padding: 10px 14px;
+        }
+        .dow{
+            color: $body-font-color;
+        }
+        .day{
+            color: $body-font-color;
+            cursor: pointer;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            font-weight: $medium;
+        }
+        .active{
+            background-color: $blue-color;
+            color: #fff;
+            &:after{
+                color: #fff !important;
+            }
+        }
+        .event-on{
+            &:after{
+                color: $green;
+                content: '\00a0 \2022 \00a0';
+                position: absolute;
+                bottom: -3px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .disabled{
+            color: #D9D9D9;
+        }
+        thead tr .picker-switch{
+            font-size: $heading-small-font-size;
+            color: $blue-color;
+            font-weight: $medium;
+        }
+        .old, .new{
+            visibility: hidden
+        }
+    }
+}

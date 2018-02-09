@@ -1,0 +1,92 @@
+
+
+%hero-button{
+    font-family: $font-family;
+    color: $link-font-color;
+    float: left;
+    text-align: center;
+    position: relative;
+    display: table;
+    padding: 35px 20px;
+    font-size: $hero-button-font-size;
+    font-weight: $medium;
+    
+}
+.read-more{
+    font-size: $read-more-button-size;
+    color: #CBCBCB !important;
+    font-weight: $medium !important;
+    
+    &:hover{
+        color: $green !important;
+        text-decoration: none;
+    }
+}
+.button-center{
+    text-align: center;
+}
+%button{
+    padding: 7px 30px;
+    border-radius: 25px;
+    border: 2px solid #8BB036;
+    font-size: 0.9em;
+    font-weight: $medium;
+    
+    &:hover{
+        background-color: $green;
+        color: #fff !important;
+        text-decoration: none;
+    }
+}
+%large-button{
+    @extend %button;
+    padding: 10px 60px;
+    color: $green;
+    
+    &:after{
+        color: $green;
+        content:"\f178";
+        font-family: FontAwesome;
+        padding-left: 10px;
+        
+    }
+    &:hover:after{
+        color: #fff;
+    }
+}
+.link{
+    color: $link-font-color;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover{
+        color: $blue-color;
+        text-decoration: none;
+    }
+}
+.language-button{
+    position: absolute;
+    right: 0;
+    a{
+        padding: 10px 5px;
+        color: #fff;
+        background-color: $link-font-color;
+        border-radius: 0;
+        color:#d1d1d1;
+        font-size: 0.8em;
+    }
+    .dropdown{
+        display: inline-block;
+    }
+    .dropdown-menu{
+        border-radius: 0;
+        background-color: $link-font-color;
+        min-width: 100%;
+        margin: 0;
+    }
+    .dropdown-item{
+        &:hover{
+            background-color: $green;
+            color: #FFF;
+        }
+    }
+}

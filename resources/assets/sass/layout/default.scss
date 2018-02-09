@@ -1,0 +1,25 @@
+body{
+    font-family: $font-family;
+}
+.section-content{
+    width: 80%;
+    margin: auto;
+    padding: 70px 0px;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+@media (max-width: 1200px){
+    .vissible-xl{
+        display: none;
+    }
+    .section-content {
+       width: 95%;
+    }
+}

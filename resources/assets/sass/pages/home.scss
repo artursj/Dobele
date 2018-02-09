@@ -1,0 +1,210 @@
+
+body{
+    background-color: #f9f9fb;
+}
+.section{
+    background-color: #fff;
+}
+#hero{
+    background-image: url('../images/hero-background.jpg');
+    background-size: cover;
+    border-bottom: 3px solid $green;
+    position: relative;
+    .language-container{
+        padding: 0;
+        position: relative;
+    }
+    .col-7{
+        padding: 0;
+    }
+}
+@media (min-width: 1280px){
+    .container {
+        max-width: 80%;
+    }
+}
+.hero-nav .row .hero-button{
+    @extend %hero-button;
+    width: 25%;
+    background-color: $hero-button-color;
+    border-left: 1px solid $light-border-color;
+    border-bottom: 1px solid $light-border-color;
+    display: table;
+    padding: 20px 10px 60px 10px;
+    img{
+        width: 80px;
+    }
+    p{
+        line-height: 17px;
+        font-weight: $bold;
+        height: 25px;
+        display: table-cell;
+        vertical-align: middle;
+        border-bottom: 1px solid $link-font-color;
+        font-size: 0.95em;
+    }
+    
+    .hero-btn-wrapper{
+        div{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &:hover{
+        color: $blue-color;
+        text-decoration: none;
+        background-color: $hero-button-hover-color;
+    }
+    &:hover p{
+        border-bottom: none;
+        
+    }
+}
+.dobele-dara{
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.56);
+    img{
+        width: 40px;
+    }
+    p{
+        text-transform: uppercase;
+        font-size: 0.9em;
+        font-weight: 600;
+        color: #e97f13;
+        margin: 5px 0px 0px 0px;
+        
+    }
+}
+.hero-contact{
+    position: absolute;
+    bottom: 0;
+    ul{
+        padding: 0;
+        color: #fff;
+        li{
+            list-style: none;
+            font-weight: $bold;
+            letter-spacing: 2px;
+            i{
+                width: 30px;
+                text-align: center;
+            }
+        }
+    }
+}
+.hero-nav .row .empty{
+    @extend %hero-button;
+    width: 25%;
+}
+.divider{
+    .section-content{
+        padding: 0px;
+    }
+    hr{
+        margin: 0px;
+    }
+}
+.second-section{
+    .block-wrapper{
+        padding: 15px 0px;
+    }
+}
+.third-section {
+    .section-content{
+            padding-top: 0px;
+        }
+    .event-date{
+    @extend %event-date;
+        max-height: 240px;
+        
+    }
+    .button{
+        @extend %large-button;
+        
+    }
+}
+.fourth-section{
+    .row{
+        margin: auto;
+        display: table;
+    }
+    .hero-button{
+        @extend %hero-button;
+        width: 190px;
+        img{
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 1.2em;
+            color: $blue-color;
+            font-weight: $bold;
+        }
+    }
+    .button{
+        @extend %large-button;
+    }
+}
+.fifth-section{
+    background-color: #EFF2F3;
+    #carousel{
+        .fa{
+            font-size: 2em;
+            color: $body-font-color;
+        }
+        .carousel-inner {
+            width: 50%;
+            margin: auto;
+            min-height: 120px;
+            text-align: center;
+            color: $body-font-color;
+        }
+        .carousel-indicators{
+            position: relative;
+            bottom: 0px;
+            margin-top: 15px;
+            li{
+                width: 10px;
+                border-radius: 50%;
+                border: 2px solid $link-font-color;
+                height: 10px;
+                cursor: pointer;
+            }
+            .active{
+                background-color: $link-font-color;
+            }
+        }
+    }
+}
+.sixth-section{
+    background-image: url('../images/getintouch.jpg');
+    background-size: cover;
+    .section-content{
+        text-align: center;
+    }
+    p{
+        color: #FFF;
+        font-size: 1.3em;
+        font-weight: $bold;
+        display: inline-block;
+        padding-right: 15px;
+    }
+    .button{
+        @extend %large-button;
+        display: inline-block;
+        color: #fff !important;
+         &:after{
+            color: #fff;
+            content:"\f178";
+            font-family: FontAwesome;
+            padding-left: 10px;
+            
+        }
+    }
+}

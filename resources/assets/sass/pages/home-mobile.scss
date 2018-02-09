@@ -1,0 +1,97 @@
+
+@media (max-width: 1200px){
+    #hero{
+        .col-xl-7{
+           padding: 0px;
+        }
+        .hero-contact{
+            position: relative;
+        }
+        .hero-nav{
+            .row{
+                .hero-button{
+                    width: 50%;
+                }
+                .empty{
+                    display: none;
+                }
+            }
+        }
+    }
+    .second-section{
+        .block-wrapper{
+            padding: 0px 0px;
+        }
+    }
+    
+    .third-section{
+        .col-xl-6, .col-xl-11{
+            padding: 0;
+        }
+        .event-count{
+            padding-top: 20px; 
+        }
+        .button-center{
+            padding-top: 20px;
+        }
+        .event-date{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            .event-date-container{
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+               }
+            .day-block{
+                border-left: 1px solid #DCDCDC;
+                border-top: 0;
+                padding: 0;
+                padding-left: 10px;
+                .day{
+                    margin: 0;
+                }
+            }
+            .date-block{
+                flex-flow: row;
+                padding-right: 10px;
+                .date{
+                    order: 1;
+                    margin: 0;
+                    font-size: 20px;
+                    padding-right: 10px;
+                }
+                .month{
+                    order: 2;
+                    font-size: 17px;
+                    
+                }
+            }
+        }
+    }
+    .fourth-section{
+        .hero-button{
+            width: 50%;
+            padding: 0;
+            height: 140px;
+            p{
+                font-size: 0.8em;
+                height: 50px;
+            }
+            img{
+                margin-bottom: 10px;
+                width: 60px;
+            }
+        }
+    }
+    .fifth-section{
+        #carousel{
+            .carousel-inner{
+                width: 90%;
+            }
+            .carousel-control-prev, .carousel-control-next{
+                display: none,
+            }
+        }
+    }
+    
+}
