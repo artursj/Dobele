@@ -33,7 +33,7 @@ var watchPaths    = {
 // Task for sass files
 gulp.task('sass', function () {
     gulp
-        .src(['bower_components/bootstrap/dist/css/bootstrap.css','bower_components/components-font-awesome/scss/font-awesome.scss',srcPath + 'sass/main.scss']) 
+        .src(['bower_components/components-font-awesome/scss/font-awesome.scss',srcPath + 'sass/main.scss']) 
         .pipe(sass())
         .pipe(cssmin())
         .pipe(concat('main.css'))

@@ -4,6 +4,7 @@
 <head>
     <title>Dobele</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="build/css/main.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -11,6 +12,68 @@
 <body>
 
 <div class="container">
+     <header>
+        <div class="section-content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-faded">
+                <div class="row">
+                    <div class="col-lg-3 mobile-nav-bar">
+                        <a class="navbar-brand" href="#">
+                            <img src="build/images/dobele-logo.png" alt="Dobeles logo">
+                        </a>
+                        <div class="menu-button">
+                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-9 menu-items">
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="nav-container">
+                                <div class="navbar-nav top-nav">
+                                    <ul class="navbar-nav">
+                                        <li><a class="nav-item nav-link active vissible-xl" href="#">Iepirkumi</a></li>
+                                        <li><a class="nav-item nav-link vissible-xl" href="#">Par PIAUC</a></li>
+                                        <li><a class="nav-item nav-link vissible-xl" href="#">Kontakti</a></li>
+                                        <li> <a class="nav-item nav-link " href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="language-button">
+                                            <div class="dropdown show">
+                                                <a class="btn dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  LV
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                  <a class="dropdown-item" href="#">EN</a>
+                                                  <a class="dropdown-item" href="#">RU</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="navbar-nav main-nav">
+                                    <a class="nav-item nav-link" href="#"><i class="fa fa-home vissible-xl"></i><span class="mobile-only">Sākums</span></a>
+                                    <a class="nav-item nav-link active" href="#">Aktualitātes</a>
+                                    <a class="nav-item nav-link" href="#">Notikumu Kalendārs</a>
+                                    <a class="nav-item nav-link" href="#">Kursi</a>
+                                    <a class="nav-item nav-link" href="#">Tālmācība</a>
+                                    <a class="nav-item nav-link" href="#">Projekti</a>
+                                    <a class="nav-item nav-link" href="#">Uzņmējdarbība</a>
+                                    <a class="nav-item nav-link" href="#">Pakalpojumi</a>
+                                    <a class="nav-item nav-link" href="#">ECDL</a>
+                                </div>
+                                <div class="navbar-nav top-nav mobile-only">
+                                    <a class="nav-item nav-link active" href="#">Iepirkumi</a>
+                                    <a class="nav-item nav-link" href="#">Par PIAUC</a>
+                                    <a class="nav-item nav-link" href="#">Kontakti</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </nav>
+        </div>
+    </header>
     <section id="hero" class="first-section">
         <div class="section-content language-container vissible-xl">
             <div class="language-button ">
@@ -137,7 +200,7 @@
         <div class="section-content">
             <h2>Pēdējie Jaunumi un aktuālie kursi</h2>
             <div class="row block-wrapper">
-                <article class="news col-xl-4">
+                <article class="news col-md-4">
                     <div class="inner-content">
                         <p class="title">Nosaukums vienā rindā</p>
                         <p class="details"><span class="date">30. Martā</span><span class="category">Projekti</span></p>
@@ -146,7 +209,7 @@
                         <a href="#" class="read-more">Lasīt vairāk</a>
                     </div> 
                 </article>
-                <article class="news col-xl-4">
+                <article class="news col-md-4">
                     <div class="inner-content">
                         <p class="title">Nosaukums 2 rindās izskatās šādi</p>
                         <p class="details"><span class="date">30. Martā</span><span class="category">Notikumi</span></p>
@@ -155,7 +218,7 @@
                         <a href="#" class="read-more">Lasīt vairāk</a>
                     </div>
                 </article>
-                <article class="news col-xl-4">
+                <article class="news col-md-4">
                     <div class="inner-content">
                         <p class="title">Nosaukums 2 rindās izskatās šādi</p>
                         <p class="details"><span class="date">30. Martā</span><span class="category">Uzņēmējdarbības projekti</span></p>
@@ -167,7 +230,7 @@
                 
             </div>
             <div class="row block-wrapper">
-                <article class="event col-xl-4">
+                <article class="event col-md-4">
                     <div class="inner-content row">
                         
                         <div class="event-date col-3">
@@ -187,7 +250,7 @@
                         </div>
                     </div> 
                 </article>
-                <article class="event col-xl-4">
+                <article class="event col-md-4">
                     <div class="inner-content row">
                         
                         <div class="event-date col-3">
@@ -207,7 +270,7 @@
                         </div>
                     </div> 
                 </article>
-                <article class="event col-xl-4">
+                <article class="event col-md-4">
                     <div class="inner-content row">
                         
                         <div class="event-date col-3">
@@ -396,10 +459,10 @@
             <a href="#" class="button">Sazināties ar mums</a>
         </div>
     </section>
-    <footer>
+ <footer>
         <div class="section-content">
             <div class="row">
-                <div class="col-xl-3 info">
+                <div class="col-sm-3 info">
                     <img alt="dobeles logo" src="build/images/dobele-logo.png"/>
                     <ul>
                         <li><i class="fa fa-map-marker"></i><p>Brīvības iela 7, Dobele, Dobeles nov., LV-3701, Latvija</p></li>
@@ -408,7 +471,7 @@
                         <li><i class="fa fa-clock-o"></i><p>P-P 10:00 - 18:00, S, Sv. slēgts</p></li>
                     </ul>
                 </div>
-                <div class="col-xl-3 vissible-xl">
+                <div class="col-sm-3 hidden-md-down">
                     <p class="footer-menu-title">Kursi</p>
                     <ul>
                         <li class="footer-menu-item"><a href="#">Informācijas tehnoloģijas</a></li>
@@ -419,7 +482,7 @@
                         <li class="footer-menu-item"><a href="#">Citi kursi</a></li>
                     </ul>
                 </div>
-                <div class="col-xl-3 vissible-xl">
+                <div class="col-sm-3 hidden-md-down">
                     <p class="footer-menu-title">Pakalpojumi</p>
                     <ul>
                         <li class="footer-menu-item"><a href="#">Telpu noma</a></li>
@@ -428,7 +491,7 @@
                         <li class="footer-menu-item"><a href="#">ECDL testēšanas centrs</a></li>
                     </ul>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-sm-3">
                     <p class="footer-menu-title">Pierakstīties jaunumiem</p>
                     <p class="footer-text">Esi kursā par Dobeles PIUAC aktuālāko un svaigāko!</p>
                     <div class="input-group">

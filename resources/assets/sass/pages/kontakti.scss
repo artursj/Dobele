@@ -1,0 +1,100 @@
+#page-kontakti{
+    .first-section{
+        .section-content{
+            padding: 0;
+            width: 100%;
+        }
+        
+        .background-image{
+            background-image: url("../images/parmums.jpg");
+            background-size: cover;
+            height: 400px;
+        }
+        .text-block{
+            @extend %text-block;
+            background-color: #EFF2F3;
+            padding-left: 150px;
+            p{
+                width: 80%;
+            }
+            
+        }
+    }
+    
+    .second-section{
+        .section-content{
+            padding: 0px;
+        }
+        .team{
+            padding: 70px 0px ;
+            text-align: center;
+            .single-item{
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            .image{
+                height: 115px;
+                width: 115px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: auto;
+                background-color: #f9f9fb;
+            }
+            .name{
+                font-size: $heading-xs-font-size;
+                color: $blue-color;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            .ocupation{
+                font-size: 0.8em;
+            }
+            .phone{
+                font-size: 0.9em;
+                color: #656565;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+            
+        }
+        .side-info{
+            padding: 70px 0px ;
+            padding-left: 50px;
+            border-left: 1px solid #eff2f3;
+            i{
+                padding-right: 10px;
+            }
+            .body-text{
+               @extend %body-text;
+            }
+            .email{
+                @extend %body-text;
+                color: $green;
+                text-decoration: underline;
+            }
+        }
+        .text-block{
+            @extend %text-block;
+        }
+    }
+}
+@media (max-width: 768px){
+    .side-info{
+        padding-left: 0px !important;
+        border: none !important;
+    }
+}
+@media (max-width: 1200px){
+    #page-kontakti{
+        .first-section{
+
+            .text-block{
+                padding-left: 10px;
+                p{
+                    width: 90%;
+                }
+                
+            }
+        }
+    }
+}

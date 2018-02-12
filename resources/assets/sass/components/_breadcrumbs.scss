@@ -1,0 +1,19 @@
+.section-breadcrumbs{
+    .section-content{
+        padding: 15px 0px;
+    }
+    .breadcrumb{
+        background-color: #fff;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 0.8em;
+        font-weight: $medium;
+        .breadcrumb-item{
+            color: #818181;
+            &.active{
+                color: $details-font-color;
+            }
+        }
+    }
+}

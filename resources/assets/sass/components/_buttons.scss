@@ -63,6 +63,11 @@
         text-decoration: none;
     }
 }
+.email{
+    color: $green;
+    font-size: 0.9em;
+    text-decoration: underline;
+}
 .language-button{
     position: absolute;
     right: 0;
@@ -71,7 +76,8 @@
         color: #fff;
         background-color: $link-font-color;
         border-radius: 0;
-        color:#d1d1d1;
+        color:#fff;
+        opacity: 0.4;
         font-size: 0.8em;
     }
     .dropdown{

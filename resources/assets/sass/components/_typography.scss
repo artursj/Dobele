@@ -31,14 +31,29 @@ h2{
         transform: translateX(-50%);
     }
 }
+.title-left{
+    text-align: left;
+    &:after{
+        left: 0px;
+        transform: translateX(0px);
+    }
+}
 .title{
     font-size: $heading-xs-font-size;
     color: $blue-color;
     font-weight: $medium;
     line-height: 25px;
 }
-.details{
-    
+%body-text{
+    font-size: 0.9em;
+    color: $body-font-color;
+}
+%text-block{
+    padding-top: 30px;
+    p{
+        color: #656565;
+        font-size:$body-text-size;
+    }
 }
 
 

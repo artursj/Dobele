@@ -14,10 +14,20 @@ body{
   clear: both;
   height: 0;
 }
-
-@media (max-width: 1200px){
-    .vissible-xl{
+.mobile-only{
+    display: none;
+}
+@media (max-width: 576px){
+    .hidden-md-down{
         display: none;
+    }
+}
+@media (max-width: 1200px){
+    .mobile-only{
+        display: block;
+    }
+    .vissible-xl{
+        display: none !important;
     }
     .section-content {
        width: 95%;

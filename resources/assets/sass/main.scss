@@ -1,13 +1,29 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 1000px,
+  lg: 1336px,
+  xl: 1420px
+);
+@import "./././bower_components/bootstrap/scss/bootstrap";
+
 @import "components/colors";
 @import "components/typography";
 @import "components/buttons";
 @import "components/news";
 @import "components/event-calendar";
 @import "components/form";
+@import "components/breadcrumbs";
+@import "components/googlemap";
+
 @import "layout/default";
 @import "layout/footer";
+@import "layout/header";
 @import "pages/home";
+@import "pages/kontakti";
 
 @import "vendor/bootstrap";
 
 @import "pages/home-mobile";
+
+
