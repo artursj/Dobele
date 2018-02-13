@@ -5,6 +5,11 @@ body{
 .section{
     background-color: #fff;
 }
+.page-home{
+    header{
+        display: none;
+    }
+}
 #hero{
     background-image: url('../images/hero-background.jpg');
     background-size: cover;
